@@ -1,65 +1,107 @@
-body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
+* {
+    box-sizing: border-box;
+    margin: 1;
+    border: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: bisque;
 }
-.root {
-    --outer-space: #33393f;
-    --turquoise: #2aefcb;
-    --gin: #e0eae4;
-    --pink: #e866ec;
 
+title {
+    display: none;
 }
+/* header styling */
+
 header {
-    text-align: center;
-    margin: 20px 20px 20px 20px;
-    color: var(--gin);
-    padding: 40px
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(181, 9, 35);
+    display: block;
 }
 
 header h1 {
-    font-size: 200%;
+    display: inline-block;
+    font-size: 40px;
+    color: bisque;
+    background-color: rgb(181, 9, 35);
+}
+/* styling for the header nvaigation bar */
+
+header nav {
+    display: inline-flex;
+    float: right; 
+    padding-left: 15px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: bisque;
+    background-color: rgb(181, 9, 35);
 }
 
-h2 {
-    margin: 2% 0;
-    font-size: 250%;
-}
+header nav a {
+    display: inline-flex;
+    margin-left: 20px;
+    color: bisque;
+    text-decoration: solid;
+    background-color: rgb(181, 9, 35);
+}  
 
-body {
-    background-color: var(--outer-space);
-}
-
-main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: 1200px;
-    margin: 2%;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.hero {
+    background-image: url("../images/background-photo.jpg");
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: inline-flex;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    border-style: solid;
-    border-width: 2px;
-    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img src {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    min-height: 100%; 
+}
+
+.title h2 {
+    display: block;
+    text-decoration: solid;
+    text-align: left;
+    background-color: rgb(181, 9, 35);
+}
+
+.projects p {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 15px;    
+}
+
+.projects-1 {
+    display: grid;
+    border: solid;
+    color: black;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;   
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: auto;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  header, main {
-    flex-direction: column;
-  }  
+.contact-me{
+    align-items: center;
+    font-size: 15px;
+    text-decoration: solid;
+}
 
-section {
-    padding-right: 0;     
+@media screen {
+    min-width: none;
+    max-width: 992px;
 }
