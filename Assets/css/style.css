@@ -56,7 +56,7 @@ header nav a {
     justify-content: space-around;
 }
 
-.img src {
+.img .src {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: row;
@@ -95,7 +95,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.contact-me{
+.contact-me {
     align-items: center;
     font-size: 15px;
     text-decoration: solid;
